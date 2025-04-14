@@ -39,7 +39,7 @@
         <li class="dropdown"><a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">Home <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="index.html">Default Layout</a></li>
-
+            <li><a href="index2.html">Home with AJAX Gallery</a></li>
             <li><a href="index3.html">Home with Onepage Gallery</a></li>
             <li><a href="index4.html">Home with Slide Portfolio</a></li>
             <li><a href="index5.html">Home with Grid Blog 1</a></li>
@@ -56,7 +56,7 @@
             <li><a href="index6.html">Dark Solid</a></li>
           </ul>
         </li>
-        <li class="dropdown"><a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">Portfolio <span class="caret"></span></a>
+        <li class="current dropdown"><a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">Portfolio <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="portfolio.html">Mosaic Portfolio</a></li>
             <li><a href="portfolio2.html">Mosaic Portfolio w/ Lightbox</a></li>
@@ -79,7 +79,7 @@
             <li><a href="blog-post2.html">Blog Post No Sidebar</a></li>
           </ul>
         </li>
-        <li class="current dropdown"><a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">Pages <span class="caret"></span></a>
+        <li class="dropdown"><a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">Pages <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="about.html">About 1</a></li>
             <li><a href="about2.html">About 2</a></li>
@@ -118,136 +118,212 @@
   <!-- /.navbar -->
   
   <div class="offset"></div>
-  <div class="light-wrapper">
-    <div class="container inner">
-      <h3 class="section-title text-center">who is behind all this</h3>
-      <div class="divide20"></div>
-      <div class="row">
-        <div class="col-sm-5">
-          <figure><img src="style/images/art/about3.jpg" alt=""></figure>
-        </div>
-        <!-- /column -->
-        <div class="col-sm-7">
-          <blockquote>
-            <p> Pellentesque non diam et tortor dignissim bibendum. Neque sit amet mauris egestas quis mattis velit fringilla. Curabitur viver justo sed scelerisque. Cras mattis consectetur purus sit amet.</p>
-          </blockquote>
-          <p>Tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p>Fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla.</p>
-          <ul class="social">
-            <li><a href="#"><i class="icon-s-facebook"></i></a></li>
-            <li><a href="#"><i class="icon-s-twitter"></i></a></li>
-            <li><a href="#"><i class="icon-s-dribbble"></i></a></li>
-            <li><a href="#"><i class="icon-s-pinterest"></i></a></li>
-            <li><a href="#"><i class="icon-s-vimeo"></i></a></li>
-            <li><a href="#"><i class="icon-s-flickr"></i></a></li>
-          </ul>
-        </div>
-        <!-- /column --> 
-        
-      </div>
-      <!-- /.row -->
-      <div class="clearfix"></div>
-    </div>
-    <!--/.container --> 
-  </div>
-  <!--/.light-wrapper --> 
-  
   <div class="dark-wrapper">
     <div class="container inner">
-      <div class="row text-center facts">
-        <div class="col-sm-3">
-          <div class="icon-large"> <i class="budicon-video-2"></i> </div>
-          <h2>7518</h2>
-          <p>Shots Taken</p>
-        </div>
-        <!--/column -->
-        <div class="col-sm-3">
-          <div class="icon-large"> <i class="budicon-coffee"></i> </div>
-          <h2>3472</h2>
-          <p>Cups of Coffee</p>
-        </div>
-        <!--/column -->
-        <div class="col-sm-3">
-          <div class="icon-large"> <i class="budicon-video"></i> </div>
-          <h2>2184</h2>
-          <p>Movies Watched</p>
-        </div>
-        <!--/column -->
-        <div class="col-sm-3">
-          <div class="icon-large"> <i class="budicon-award-1"></i> </div>
-          <h2>4523</h2>
-          <p>Awards Won</p>
-        </div>
-        <!--/column --> 
+      <div class="thin">
+        <h3 class="section-title text-center">my latest works</h3>
+        <p class="text-center">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat.</p>
       </div>
-      <!--/.row --> 
-    </div>
-    <!--/.container --> 
-  </div>
-  <!--/.dark-wrapper --> 
-  
-  <div class="parallax parallax3 inverse-wrapper customers">
-    <div class="container inner text-center">
-      <h3 class="section-title">happy customers</h3>
-      <div class="testimonials owl-carousel thin">
-        <div class="item">
-          <blockquote>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur. Nullam dolor nibh ultricies vehicula elit vulputate tristique egestas.<small class="meta">Nikolas Brooten</small></p>
-          </blockquote>
+      <!-- /.thin -->
+      <div class="divide10"></div>
+      <div class="cbp-panel">
+        <div id="js-filters-mosaic" class="cbp-filter-container text-center">
+          <div data-filter="*" class="cbp-filter-item-active cbp-filter-item"> All </div>
+          <div data-filter=".print" class="cbp-filter-item"> Print </div>
+          <div data-filter=".web" class="cbp-filter-item"> Web Design </div>
+          <div data-filter=".logo" class="cbp-filter-item"> Logo </div>
+          <div data-filter=".motion" class="cbp-filter-item"> Motion </div>
         </div>
-        <!-- /.item -->
-        <div class="item">
-          <blockquote>
-            <p>Cras justo odio, dapibus facilisis in, egestas eget quam. Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod.<small class="meta">Coriss Ambady</small></p>
-          </blockquote>
+        <div id="js-grid-mosaic" class="cbp">
+          <div class="cbp-item print motion"> <a class="cbp-caption" href="portfolio-post.html">
+            <div class="cbp-caption-defaultWrap"> <img src="style/images/art/p1.jpg" alt="" /> </div>
+            <div class="cbp-caption-activeWrap">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <div class="cbp-l-caption-title">Fringilla Vehicula Magna</div>
+                </div>
+              </div>
+            </div>
+            <!--/.cbp-caption-activeWrap --> 
+            </a> 
+          </div>
+          <!--/.cbp-item -->
+          
+          <div class="cbp-item print"> <a class="cbp-caption" href="portfolio-post2.html">
+            <div class="cbp-caption-defaultWrap"> <img src="style/images/art/p2.jpg" alt="" /> </div>
+            <div class="cbp-caption-activeWrap">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <div class="cbp-l-caption-title">Mattis Inceptos</div>
+                </div>
+              </div>
+            </div>
+            <!--/.cbp-caption-activeWrap --> 
+            </a> </div>
+          <!--/.cbp-item -->
+          
+          <div class="cbp-item web logo"> <a class="cbp-caption" href="portfolio-post3.html">
+            <div class="cbp-caption-defaultWrap"> <img src="style/images/art/p3.jpg" alt="" /> </div>
+            <div class="cbp-caption-activeWrap">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <div class="cbp-l-caption-title">Sollicitudin Dapibus</div>
+                </div>
+              </div>
+            </div>
+            <!--/.cbp-caption-activeWrap --> 
+            </a>
+          </div>
+          <!--/.cbp-item -->
+          
+          <div class="cbp-item web"> <a class="cbp-caption" href="portfolio-post4.html">
+            <div class="cbp-caption-defaultWrap"> <img src="style/images/art/p4.jpg" alt="" /> </div>
+            <div class="cbp-caption-activeWrap">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <div class="cbp-l-caption-title">Fringilla Commodo</div>
+                </div>
+              </div>
+            </div>
+            <!--/.cbp-caption-activeWrap --> 
+            </a> </div>
+          <!--/.cbp-item -->
+          
+          <div class="cbp-item print logo"> <a class="cbp-caption" href="portfolio-post.html">
+            <div class="cbp-caption-defaultWrap"> <img src="style/images/art/p5.jpg" alt="" /> </div>
+            <div class="cbp-caption-activeWrap">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <div class="cbp-l-caption-title">Ridiculus Adipiscing</div>
+                </div>
+              </div>
+            </div>
+            <!--/.cbp-caption-activeWrap --> 
+            </a> </div>
+          <!--/.cbp-item -->
+          
+          <div class="cbp-item print web"> <a class="cbp-caption" href="portfolio-post2.html">
+            <div class="cbp-caption-defaultWrap"> <img src="style/images/art/p6.jpg" alt="" /> </div>
+            <div class="cbp-caption-activeWrap">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <div class="cbp-l-caption-title">Venenatis Aenean</div>
+                </div>
+              </div>
+            </div>
+            <!--/.cbp-caption-activeWrap --> 
+            </a>
+          </div>
+          <!--/.cbp-item -->
+          
+          <div class="cbp-item motion logo"> <a class="cbp-caption" href="portfolio-post3.html">
+            <div class="cbp-caption-defaultWrap"> <img src="style/images/art/p7.jpg" alt="" /> </div>
+            <div class="cbp-caption-activeWrap">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <div class="cbp-l-caption-title">Euismod Tristique</div>
+                </div>
+              </div>
+            </div>
+            <!--/.cbp-caption-activeWrap --> 
+            </a> </div>
+          <!--/.cbp-item -->
+          
+          <div class="cbp-item print logo"> <a class="cbp-caption" href="portfolio-post4.html">
+            <div class="cbp-caption-defaultWrap"> <img src="style/images/art/p8.jpg" alt="" /> </div>
+            <div class="cbp-caption-activeWrap">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <div class="cbp-l-caption-title">Sem Venenatis</div>
+                </div>
+              </div>
+            </div>
+            <!--/.cbp-caption-activeWrap --> 
+            </a> </div>
+          <!--/.cbp-item -->
+          
+          <div class="cbp-item logo web"> <a class="cbp-caption" href="portfolio-post.html">
+            <div class="cbp-caption-defaultWrap"> <img src="style/images/art/p9.jpg" alt="" /> </div>
+            <div class="cbp-caption-activeWrap">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <div class="cbp-l-caption-title">Mattis Malesuada Fusce</div>
+                </div>
+              </div>
+            </div>
+            <!--/.cbp-caption-activeWrap --> 
+            </a> </div>
+          <!--/.cbp-item -->
+          
+          <div class="cbp-item print web"> <a class="cbp-caption" href="portfolio-post2.html">
+            <div class="cbp-caption-defaultWrap"> <img src="style/images/art/p10.jpg" alt="" /> </div>
+            <div class="cbp-caption-activeWrap">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <div class="cbp-l-caption-title">Ligula Risus</div>
+                </div>
+              </div>
+            </div>
+            
+            <!--/.cbp-caption-activeWrap --> 
+            
+            </a> </div>
+          
+          <!--/.cbp-item -->
+          
+          <div class="cbp-item print"> <a class="cbp-caption" href="portfolio-post3.html">
+            <div class="cbp-caption-defaultWrap"> <img src="style/images/art/p11.jpg" alt="" /> </div>
+            <div class="cbp-caption-activeWrap">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <div class="cbp-l-caption-title">Pellentesque Ipsum</div>
+                </div>
+              </div>
+            </div>
+            
+            <!--/.cbp-caption-activeWrap --> 
+            
+            </a> </div>
+          
+          <!--/.cbp-item -->
+          
+          <div class="cbp-item print logo"> <a class="cbp-caption" href="portfolio-post4.html">
+            <div class="cbp-caption-defaultWrap"> <img src="style/images/art/p12.jpg" alt="" /> </div>
+            <div class="cbp-caption-activeWrap">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <div class="cbp-l-caption-title">Vulputate Sollicitudin</div>
+                </div>
+              </div>
+            </div>
+            <!--/.cbp-caption-activeWrap --> 
+            </a> </div>
+          <!--/.cbp-item -->
+          
+          <div class="cbp-item print logo"> <a class="cbp-caption" href="portfolio-post.html">
+            <div class="cbp-caption-defaultWrap"> <img src="style/images/art/p13.jpg" alt="" /> </div>
+            <div class="cbp-caption-activeWrap">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <div class="cbp-l-caption-title">Ullamcorper Tellus</div>
+                </div>
+              </div>
+            </div>
+            <!--/.cbp-caption-activeWrap --> 
+            </a> </div>
+          <!--/.cbp-item --> 
+          
         </div>
-        <!-- /.item -->
-        <div class="item">
-          <blockquote>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis id vestibulum. Donec sed odio dui. Sed posuere consectetur est at lobortis.<small class="meta">Barclay Widerski</small></p>
-          </blockquote>
-        </div>
-        <!-- /.item -->
-        <div class="item">
-          <blockquote>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet.<small class="meta">Elsie Spear</small></p>
-          </blockquote>
-        </div>
-        <!-- /.item --> 
+        <!--/.cbp --> 
+        
       </div>
-      <!-- /.testimonials --> 
+      <!--/.cbp-panel -->
+      <div class="divide30"></div>
+      <div id="js-grid-mosaic-more" class="cbp-l-loadMore-text"> <a href="ajax/loadmore.html" class="cbp-l-loadMorelink btn" rel="nofollow"> <span class="cbp-l-loadMore-defaultText">Load More</span> <span class="cbp-l-loadMore-loadingText">Loading...</span> <span class="cbp-l-loadMore-noMoreLoading">No More Works</span> </a> </div>
     </div>
     <!-- /.container --> 
   </div>
-  <!-- /.parallax -->
-  
-  <div class="light-wrapper">
-    <div class="container inner">
-      <div class="row">
-        <div class="col-sm-4 col-md-3">
-          <h2>Flickr Feed</h2>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo.</p>
-          <div class="divide10"></div>
-          <a href="https://www.flickr.com/photos/pagolbhai123/" class="btn btn-icon"><i class="icon-s-flickr"></i> Flickr Page</a> </div>
-        <!--/column -->
-        <div class="col-sm-8 col-md-9">
-          <div class="image-grid col5">
-            <div class="items-wrapper">
-              <div class="flickr-feed"> </div>
-              
-              <!--/.isotope --> 
-            </div>
-            <!--/.items-wrapper --> 
-          </div>
-          <!--/.image-grid --> 
-        </div>
-        <!--/column --> 
-      </div>
-      <!--/.row --> 
-    </div>
-    <!--/.container --> 
-  </div>
-  <!--/.light-wrapper -->
+  <!-- /.dark-wrapper -->
   
   <footer class="footer inverse-wrapper">
     <div class="container inner">
